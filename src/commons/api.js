@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const domain = 'https://www.bppproject.com'; //http://localhost:8080
+const domain = 'https://www.bppproject.com'; //http://localhost:8080 https://www.bppproject.com
 
 export default {
   // 获取日期形式展示列表

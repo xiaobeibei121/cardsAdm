@@ -235,6 +235,7 @@
         // 编辑
         handleEdit(index, row) {
           this.editID = row.id;
+          this.selectDate = row.date;
           Api.getDetails({id: row.id}).then((response) => {
             const res = response.data;
             if (res.errorCode == 0) {
