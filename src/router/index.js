@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home'
 import Index from '@/components/index'
+import Welcome from '@/components/welcome'
 
 Vue.use(Router)
 
@@ -14,8 +15,12 @@ export default new Router({
       component: Home,
       children :[
         {
-          path: '/',
+          path: 'message',
           component: Index
+        },
+        {
+          path: '',
+          component: Welcome
         }
       ]
     }

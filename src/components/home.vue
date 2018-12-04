@@ -4,8 +4,8 @@
         <el-header>
           <span>刷卡指南</span>
           <a class="collapse-btn" @click="collapseClick"><i class="el-icon-menu"></i></a>
-          <span class="welcome-text">欢迎，我叫小贝贝</span>
-          <a class="logout-btn">退出</a>
+          <!--<span class="welcome-text">欢迎，我叫小贝贝</span>
+          <a class="logout-btn">退出</a>-->
         </el-header>
         <el-container>
           <el-aside :width="asideWidth">
@@ -14,7 +14,7 @@
               :collapse="collapse"
               @open="handleOpen"
               @close="handleClose">
-              <el-menu-item index="1" @click="toPath('/')">
+              <el-menu-item index="1" @click="toPath('/cardPage/message')">
                 <i class="el-icon-tickets"></i>
                 <span slot="title">每日信息</span>
               </el-menu-item>
@@ -51,6 +51,9 @@
           toPath(path) {
             this.$router.push(path);
           }
+        },
+        mounted(){
+
         }
     }
 </script>
